@@ -1,10 +1,10 @@
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #333;
+    text-decoration: none;
 }
 
 header {
@@ -28,10 +28,12 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.nav-list li a:hover {
-    text-decoration: underline;
+.nav-list li a:hover{
+    text-decoration: none;
+    color: #3fa8ef;
 }
 
 /* Hero Section */
