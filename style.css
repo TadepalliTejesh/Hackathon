@@ -6,6 +6,16 @@ body {
     color: #333;
     text-decoration: none;
 }
+.hover-link{
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.hover-link:hover{
+    color: #1f69b3;
+}
 
 header {
     background-color: #003366;
@@ -38,16 +48,15 @@ header {
 
 /* Hero Section */
 .hero-section {
-    
-        position: relative;
-        height: 100vh;
-        overflow: hidden; /* Ensures the video doesn't overflow the section */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Ensures the video doesn't overflow the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 #hero-video {
     position: absolute;
@@ -79,6 +88,7 @@ header {
 
 .btn:hover {
     background-color: #0c457e;
+    
 }
 
 .why-pace{
