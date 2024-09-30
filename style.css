@@ -38,10 +38,14 @@ header {
 
 /* Hero Section */
 .hero-section {
-    background-color: #007ACC;
+    background-image: url('her-section.png'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: bottom; /* Centers the image */
+    background-repeat: no-repeat; 
+    
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 160px 20px;
 }
 
 .hero-content h1 {
@@ -55,7 +59,7 @@ header {
 }
 
 .btn {
-    background-color: #FFA500;
+    background-color: #0d7ded;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -63,12 +67,40 @@ header {
 }
 
 .btn:hover {
-    background-color: #ff8c00;
+    background-color: #0c457e;
 }
 
+.why-pace{
+    box-shadow: 0 0 1px;
+    border-radius: 10px;
+    max-width: 800px;
+    height: auto;
+    margin: 50px auto;
+    animation: text-slide-in 1.5s ease-in-out forwards 0.2s;
+}
+.wht-pace{
+    box-shadow: 0 0 1px;
+    border-radius: 10px;
+    max-width: 800px;
+    height: auto;
+    margin: 50px auto;
+    animation: text-slide-in 1.5s ease-in-out forwards 0.2s;;
+}
+
+
+@keyframes text-slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(100%); /* Slide in from the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%); /* Set to original position */
+    }
+}
 /* Section Styling */
 section {
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
