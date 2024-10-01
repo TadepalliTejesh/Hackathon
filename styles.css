@@ -1,0 +1,76 @@
+body{
+    background-color: #ffffff;
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.module-container{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    gap: 30px; 
+    flex-direction: row;
+    align-items: center;
+}
+.module{
+    background-color: rgba(255, 255, 255, 0.477);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1px); 
+    padding: 20px;
+    max-width: 300px; 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    
+}
+.module h3 {
+    font-size: 1.5rem;
+    color: #0d7ded;
+    margin-bottom: 20px;
+}
+
+.module:hover {
+    transform: translateY(-5px); /* Slight hover lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.module-video{
+    position: absolute;
+    opacity: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: -1; /* Sends the video behind the content */
+}
+.module a {
+    text-decoration: none;
+    
+}
+
+.module-list{
+    font-weight: bold;
+    font-size: 1.1rem;
+    
+}
+
+.module-list li{
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.module-list li a{
+    list-style: none;
+    color: #0f0f0f;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.module-list li a:hover{
+    color:#2380de
+}
