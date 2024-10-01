@@ -17,7 +17,7 @@ h1{
     align-items: center;
 }
 .module{
-    background-color: rgba(255, 255, 255, 0.477);
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1px); 
     padding: 20px;
