@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(228, 187, 228);
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 1100px;
+    margin: 50px auto;
+}
+h1{
+    color: rgb(107, 6, 107);
+    padding: 10px;
+    animation: slide-right 1.2s ease forwards;
+}
+h2,h3{
+    color: rgb(82, 4, 82);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-left: 6px solid rgb(82, 4, 82);
+    background-color: rgb(207, 169, 207);
+    opacity: 0;
+    animation: slide-right 1.2s ease forwards;
+
+}
+li{
+    padding: 6px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(107, 6, 107);
+    margin: 20px 0;
+}
+@keyframes slide-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideText {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    animation: slideText 3s ease-in-out ;
+    overflow: hidden;
+}
+
+
+  
