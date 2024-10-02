@@ -1,0 +1,86 @@
+body {
+    background-color: #ebe3d6; /* Light gray construction-site-like background */
+    margin: 50px auto;
+    width: 1100px;
+    padding: 30px;
+    border: 2px solid #eea220; /* Border mimicking construction tape */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif; /* Bold, no-nonsense font */
+}
+
+h2, h3 {
+    color: #333333; /* Dark gray for strong text */
+    text-transform: uppercase; /* Industrial look */
+    font-weight: bold;
+    position: relative;
+    background-color: #f5f5f5; /* Slightly different background for headers */
+    padding: 10px 20px;
+    border-left: 8px solid #eea220; /* Orange bar like construction hazard tape */
+    margin-bottom: 20px;
+    animation: text-slide-in 0.7s ease-out; /* Deliberate slide-in effect */
+}
+
+img{
+    width: 500px;
+    margin-left: 250px;
+}
+
+h1{
+   animation: text-slide-in 0.7s ease-in both; 
+   padding: 10px;
+}
+
+p,li{
+    padding: 8px;
+    line-height: 1.6;
+}
+li{
+    font-size: 1.1rem;
+    animation: text-slide-down 0.6s ease-in both;
+}
+
+@keyframes text-slide-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    
+}
+
+@keyframes text-slide-in {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+}
+
+
+
+h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d08709; /* Bright green underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover::before {
+    visibility: visible;
+    transform: scaleX(1); /* Underline grows on hover */
+}
+
