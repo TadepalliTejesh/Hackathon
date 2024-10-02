@@ -1,29 +1,142 @@
-body{
-    box-shadow: 0 0 2px black;
+/* Background and Layout */
+body {
+    background: linear-gradient(135deg, #d2f5d0, #b8e6a8); /* Gradient green background */
     margin: 50px auto;
     width: 1100px;
+    padding: 30px;
+    border-radius: 20px; /* Soft rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 100, 0, 0.2); /* Soft shadow for depth */
 }
 
-p{
-    margin: 30px;
-    padding: 0px;
-    font-size: 1.1rem;
-    line-height: 1.4;
+h1{
+    color: #006400;
+    font-size: 2.3rem;
+    
 }
 
-li{
+@keyframes pop{
+    
+}
+
+/* Paragraph and List Styles */
+p, li {
+    color: #013220; /* Darker green for better contrast */
+    font-size: 1.2rem;
+    line-height: 1.7;
+    animation: fade-up 0.8s ease-in-out both; /* Fade and slide up */
+}
+
+/* Animation for paragraph and list items: Fade in and slide up */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Styles */
+h2, h3 {
+    color: #2e7d32; /* Medium green */
+    font-size: 1.8rem;
+    position: relative;
+    animation: bounce-in 0.8s ease-out both; /* Bounce in effect */
+    margin-bottom: 15px;
+}
+
+/* Bounce-in animation for headers */
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* List Items */
+li {
+    margin-bottom: 10px;
     line-height: 1.8;
-    font-size: 1.1rem;
+    animation: fade-up 1s ease-in-out 0.4s both; /* Delayed fade and slide up */
+    opacity: 0; /* Start hidden for smooth appearance */
 }
 
-h3{
-    margin: 20px;
-    font-size: 1.3rem;
-}
-h2{
-    margin: 20px;
+/* Button */
+.blue-button {
+    background-color: #76c893; /* Fresh mint green */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px; /* Rounded pill-shaped button */
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 5px 10px rgba(0, 150, 0, 0.2); /* Soft shadow */
+    transition: background-color 0.4s, box-shadow 0.4s, transform 0.3s; /* Smooth hover transition */
 }
 
-a{
-    transition: ;
+/* Hover effect for button: Slight scale and shadow increase */
+.blue-button:hover {
+    background-color: #4caf50; /* Darker green */
+    box-shadow: 0 8px 16px rgba(0, 150, 0, 0.4); /* Darker, larger shadow */
+    transform: translateY(-5px); /* Subtle lift */
+}
+
+/* Hyperlinks */
+a {
+    color: #006400; /* Deep green for links */
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s, transform 0.3s; /* Smooth color and movement */
+}
+
+a:hover {
+    color: #00a152; /* Bright green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Underline animation */
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00a152; /* Bright green underline */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1); /* Underline grows on hover */
+}
+
+/* Image Transitions */
+img {
+    transition: transform 0.6s ease, filter 0.6s ease; /* Smooth transition for zoom and brightness */
+}
+
+img:hover {
+    transform: scale(1.15); /* Larger zoom effect */
+    filter: brightness(1.3); /* Brighter on hover */
+}
+
+/* Footer and Section Divider */
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #76c893, #4caf50); /* Gradient green divider */
+    margin: 40px 0;
 }
