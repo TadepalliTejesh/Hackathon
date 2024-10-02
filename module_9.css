@@ -6,6 +6,7 @@ body{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 1100px;
     margin: 50px auto;
+    border-radius: 10px;
 }
 h1{
     color: rgb(107, 6, 107);
