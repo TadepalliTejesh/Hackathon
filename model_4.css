@@ -1,11 +1,12 @@
 /* Background and Layout */
 body {
-    background: linear-gradient(135deg, rgb(189, 201, 208), hsl(191, 23%, 71%)); /* Gradient green background */
+    background: linear-gradient(135deg, rgb(203, 218, 232), hsl(199, 38%, 74%)); /* Gradient green background */
     margin: 50px auto;
     width: 1100px;
     padding: 30px;
     border-radius: 20px; /* Soft rounded corners */
-    box-shadow: 0 10px 20px rgba(0, 100, 0, 0.2); /* Soft shadow for depth */
+    box-shadow: 0 30px 30px rgba(0, 100, 0, 0.5); /* Soft shadow for depth */
+    border: #135468;
 }
 
 h1{
@@ -45,7 +46,7 @@ h2, h3 {
     position: relative;
     animation: bounce-in 0.8s ease-out both; /* Bounce in effect */
     margin-bottom: 15px;
-    text-shadow: 2px 2px 2px #58f4bb;
+
 }
 
 /* Bounce-in animation for headers */
