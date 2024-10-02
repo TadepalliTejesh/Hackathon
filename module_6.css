@@ -63,9 +63,6 @@ li{
     }
     
 }
-
-
-
 h1::before {
     content: '';
     position: absolute;
