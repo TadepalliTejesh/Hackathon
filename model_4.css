@@ -1,15 +1,16 @@
 /* Background and Layout */
 body {
-    background: linear-gradient(135deg, #d2f5d0, #b8e6a8); /* Gradient green background */
+    background: linear-gradient(135deg, rgb(219, 227, 233), hsl(199, 40%, 84%)); /* Gradient green background */
     margin: 50px auto;
     width: 1100px;
     padding: 30px;
     border-radius: 20px; /* Soft rounded corners */
-    box-shadow: 0 10px 20px rgba(0, 100, 0, 0.2); /* Soft shadow for depth */
+    box-shadow: 0 30px 30px rgba(0, 100, 0, 0.5); /* Soft shadow for depth */
+    border: #135468;
 }
 
 h1{
-    color: #006400;
+    color: #0d3d58;
     font-size: 2.3rem;
     
 }
@@ -36,15 +37,18 @@ p, li {
 
 /* Header Styles */
 h2, h3 {
-    color: #2e7d32; /* Medium green */
+    color: #0d3d58; /* Medium green */
     font-size: 1.8rem;
     position: relative;
     animation: bounce-in 0.8s ease-out both; /* Bounce in effect */
     margin-bottom: 15px;
+
 }
 
 /* Bounce-in animation for headers */
 @keyframes bounce-in {
+    
+} {
     0% {
         transform: scale(0.8);
         opacity: 0;
@@ -68,7 +72,7 @@ li {
 
 /* Button */
 .blue-button {
-    background-color: #76c893; /* Fresh mint green */
+    background-color: #0d3d58; /* Fresh mint green */
     color: white;
     padding: 12px 30px;
     border: none;
@@ -81,14 +85,14 @@ li {
 
 /* Hover effect for button: Slight scale and shadow increase */
 .blue-button:hover {
-    background-color: #4caf50; /* Darker green */
-    box-shadow: 0 8px 16px rgba(0, 150, 0, 0.4); /* Darker, larger shadow */
+    background-color: #396f8e; /* Darker green */
+    box-shadow: 0 8px 16px rgba(0, 107, 150, 0.4); /* Darker, larger shadow */
     transform: translateY(-5px); /* Subtle lift */
 }
 
 /* Hyperlinks */
 a {
-    color: #006400; /* Deep green for links */
+    color: #0d3d58; /* Deep green for links */
     text-decoration: none;
     position: relative;
     padding-bottom: 2px;
@@ -96,7 +100,7 @@ a {
 }
 
 a:hover {
-    color: #00a152; /* Bright green on hover */
+    color: #4187b0; /* Bright green on hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
 
@@ -108,7 +112,7 @@ a::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #00a152; /* Bright green underline */
+    background-color: #4187b0; /* Bright green underline */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -133,6 +137,6 @@ img:hover {
 hr {
     border: 0;
     height: 2px;
-    background: linear-gradient(to right, #76c893, #4caf50); /* Gradient green divider */
+    background-color: #0d3d58; 
     margin: 40px 0;
 }
