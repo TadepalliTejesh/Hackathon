@@ -182,4 +182,13 @@ footer {
     text-decoration: none;
     color: #97d7d5;
 }
+.logo-overlay {
+    position: absolute; /* Adjust the position as per your need */
+    top: 0.1px;
+    left:0.1px ;
+    width: 200px; /* Set your logo size */
+    opacity: 0.9; /* Make the logo blend slightly */
+    z-index: 1; /* Keep it on the same plane */
+    pointer-events: none; /* Allows interaction with the video below */
+  }
 
