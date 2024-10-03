@@ -190,5 +190,7 @@ footer {
     opacity: 0.9; /* Make the logo blend slightly */
     z-index: 1; /* Keep it on the same plane */
     pointer-events: none; /* Allows interaction with the video below */
+    margin-left: 15px;
+    margin-top: 4px;
   }
 
