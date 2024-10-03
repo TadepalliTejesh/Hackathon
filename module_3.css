@@ -114,3 +114,17 @@ a:hover {
         padding-left: 20px;
     }
 }
+    img{
+        margin-left: 30%;
+        width: 300px;
+        box-shadow: 0 0 20px;
+        border-radius: 7px;
+        transition: 0.5s ease-in-out;
+        margin-bottom: 20px;
+}
+img:hover{
+    transform: scale(1.15); /* Larger zoom effect */
+    filter: brightness(1.1);
+    
+}
+
