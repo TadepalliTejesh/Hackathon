@@ -11,6 +11,22 @@
     box-shadow: 0 30px 30px rgba(1, 79, 138, 0.5); 
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('mod-8_mark.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust this value for transparency */
+    z-index: -1; /* Keeps the background behind the content */
+}
+
+
 /* Centered main heading */
 h1 {
     text-align: center;
