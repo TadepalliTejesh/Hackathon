@@ -4,7 +4,7 @@ body{
     margin: 30px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 50px auto;
     border-radius: 10px;
 }
@@ -62,6 +62,18 @@ ul li {
     position: relative;
     animation: slideText 3s ease-in-out ;
     overflow: hidden;
+}
+img{
+    box-shadow: 0 0 10px black;
+    border-radius: 7px;
+    width: 400px;
+    margin-left: 30%;
+    transition: 0.5s ease-in-out;
+
+}
+img:hover{
+    transform: scale(1.15); /* Larger zoom effect */
+   filter: brightness(1.1);
 }
 
 
