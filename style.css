@@ -129,6 +129,17 @@ header {
     animation: text-slide-in 1.5s ease-in-out forwards 0.2s;
 }
 
+.discoveries{
+    box-shadow: 0 0 20px black;
+    border-radius: 18px;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    height: auto;
+    margin: 50px auto;
+    animation: text-slide-in 1.5s ease-in-out forwards 0.2s;
+}
+
 
 @keyframes text-slide-in {
     0% {
