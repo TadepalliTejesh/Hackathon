@@ -18,7 +18,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 .hover-link:hover{
-    color:#0d7ded;
+     color:#0d7ded;
 }
 
 header {
@@ -71,6 +71,7 @@ header {
     height: 100%;
     object-fit: cover; /* Ensures the video covers the entire section */
     z-index: -1; /* Sends the video behind the content */
+    opacity: 0.85 ;
 }
 
 .hero-content h1 {
