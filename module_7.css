@@ -123,3 +123,15 @@
         opacity: 0;
         animation: slide-right 1.2s ease forwards;
     }
+    img{
+        box-shadow: 0 0 10px black;
+        border-radius: 7px;
+        width: 500px;
+        margin-left: 30%;
+        transition: 0.5s ease-in-out;
+
+    }
+    img:hover{
+        transform: scale(1.15); /* Larger zoom effect */
+       filter: brightness(1.1);
+    }

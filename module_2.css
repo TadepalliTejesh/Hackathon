@@ -6,6 +6,7 @@ body {
     padding: 20px;
     color: #333;
     box-shadow: 0 0 20px ;
+    border-radius: 20px;
     width: 1100px;
     margin: 50px auto;
 }
@@ -129,4 +130,17 @@ hr {
     ul, li {
         font-size: 1em;
     }
+}
+img{
+    margin-left: 30%;
+    width: 500px;
+    box-shadow: 0 0 20px;
+    border-radius: 7px;
+    transition: 0.5s ease-in-out;
+
+}
+img:hover{
+    transform: scale(1.15); /* Larger zoom effect */
+    filter: brightness(1.1);
+    
 }

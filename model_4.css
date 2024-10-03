@@ -72,6 +72,7 @@ li {
 /* Button */
 .blue-button {
     background-color: #0d3d58; /* Fresh mint green */
+    margin-left:41%;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -80,6 +81,7 @@ li {
     font-size: 18px;
     box-shadow: 0 5px 10px rgba(0, 150, 0, 0.2); /* Soft shadow */
     transition: background-color 0.4s, box-shadow 0.4s, transform 0.3s; /* Smooth hover transition */
+    margin-bottom: 20px;
 }
 
 /* Hover effect for button: Slight scale and shadow increase */
@@ -139,3 +141,22 @@ hr {
     background-color: #0d3d58; 
     margin: 40px 0;
 }
+
+img{
+    width: 400px;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+.image-container {
+    display: flex; /* Enables flexbox */
+    justify-content: space-between ; /* Adds space between images */
+  }
+  
+  .image-container img {
+    width: 45%; /* Adjust image size if necessary */
+  }
+  
