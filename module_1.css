@@ -2,9 +2,9 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #b5c3cc;; /* Light blue background */
     color: #003366; /* Dark blue text */
-    margin: 20px;
+    margin: 30px;
     line-height: 1.6;
-    box-shadow: 0 0 2px #1583f1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 1200px;
     margin: 50px auto;
@@ -65,7 +65,7 @@ ul {
 
 li {
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 1.5rem;
 }
 
 li::marker {
